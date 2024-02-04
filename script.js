@@ -1,3 +1,9 @@
+var firstName = document.getElementById("first-name");
+
+firstName.addEventListener('animationend', function() {
+  firstName.style.borderRight = "none";
+});
+
 var oldScrollY = window.scrollY;
 
 window.onscroll = function() {scrollFunction()};

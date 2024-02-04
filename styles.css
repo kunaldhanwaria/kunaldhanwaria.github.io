@@ -14,10 +14,6 @@ h1{
     font-size: 70px;
     color: beige;
     width: 100%;
-    animation: 
-            typing 1.5s steps(15),
-            cursor .4s step-end infinite alternate;
-
     white-space: nowrap;
     overflow: hidden;
     border-right: 4px solid;
@@ -25,6 +21,33 @@ h1{
 
 h2{
     color: rgb(100, 255, 218);
+}
+
+#full-name{
+    animation: 
+            typing 1.5s steps(15),
+            cursor .4s step-end infinite alternate;
+}
+
+#first-name{
+    animation: 
+            typing 1.5s steps(5),
+            cursor .4s step-end infinite alternate;
+}
+
+#last-name{
+    animation: 
+            typing 1.5s steps(9),
+            cursor .4s step-end infinite alternate;
+}
+
+#separate-name{
+    display: none;
+}
+
+.bio{
+    font-family : 'VT323', monospace;
+    font-size: 22px;
 }
 
 .nav-menu .navbar{
@@ -95,6 +118,12 @@ h2{
     width:100%;
 }
 
+#line-one{
+    font-family : 'VT323', monospace;
+    font-size: 22px;
+    color: rgb(100, 255, 218);
+}
+
 #about{
     font-size: 15px;
     margin-top: 50px;
@@ -110,17 +139,17 @@ h2{
 }
 
 .navbar-toggler{
-    background-color: white;
+    background-color: beige;
 }
 
 .social-icon{
-    color: beige;
+    color: rgb(100, 255, 218);
     font-size: 35px;
     transition: color 0.2s;
 }
 
 .social-icon:hover{
-    color: rgb(100, 255, 218);
+    color: beige;
 }
 
 .mail-container{
@@ -187,7 +216,17 @@ h2{
     height: 100%;
 }
 
-@media (max-width : 900px){
+@media(max-width : 574px){
+    #full-name-div{
+        display: none;
+    }
+
+    #separate-name{
+        display: block;
+    }
+}
+
+@media (max-width : 800px){
     .mail-container{
         display: none;
     }
