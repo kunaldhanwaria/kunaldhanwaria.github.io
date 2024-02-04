@@ -11,7 +11,26 @@ body {
     radial-gradient(circle, #2f0943 2px, transparent 1px),
     radial-gradient(circle, #2f0943 2px, transparent 1px);
     background-color: #1a0c21; /* Background color for the gaps between dots */
-    background-size: 6px 6px; 
+    background-size: 6px 6px;
+    animation: moveBackAndForth 5s steps(5, start) infinite alternate;
+}
+
+@keyframes moveBackAndForth {
+    0% {
+        background-position: 0% 0%;
+      }
+      25% {
+        background-position: 25% 0%;
+      }
+      50% {
+        background-position: 25% 25%;
+      }
+      75% {
+        background-position: 0% 25%;
+      }
+      100% {
+        background-position: 0% 0%;
+      }
 }
 
 h1{
@@ -79,8 +98,9 @@ h2{
 }
 
 .main{
-    margin-top: 100px;
+    margin-top: 65px;
     position:relative;
+    overflow: hidden;
 }
 
 .wrapper {
@@ -106,6 +126,7 @@ h2{
 
 .social-link-bar{
     position: fixed;
+    margin-top: 40px;
 }
 
 .content{
@@ -253,4 +274,13 @@ h2{
         display: inline; /* Display list items horizontally */
         margin-right: 10px;
     }
+}
+
+.footer{
+    border-top: 3px solid rgb(100, 255, 218);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background: #280738;
+    padding: 10px;
 }
