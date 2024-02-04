@@ -5,13 +5,18 @@ html{
 
 body {
     font-family : '04b_03', monospace;
-    background: #280738;
+    /* background: #280738; */
     color: rgb(218, 216, 216);
+    background: 
+    radial-gradient(circle, #2f0943 2px, transparent 1px),
+    radial-gradient(circle, #2f0943 2px, transparent 1px);
+    background-color: #1a0c21; /* Background color for the gaps between dots */
+    background-size: 6px 6px; 
 }
 
 h1{
     font-family : 'VT323', monospace;
-    font-size: 70px;
+    font-size: 60px;
     color: beige;
     width: 100%;
     white-space: nowrap;
@@ -46,8 +51,10 @@ h2{
 }
 
 .bio{
-    font-family : 'VT323', monospace;
-    font-size: 22px;
+    /* font-family : 'VT323', monospace; */
+    font-size: 15px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-weight: normal;
 }
 
 .nav-menu .navbar{
@@ -140,6 +147,7 @@ h2{
 
 .navbar-toggler{
     background-color: beige;
+    border-radius: 0;
 }
 
 .social-icon{
@@ -216,7 +224,7 @@ h2{
     height: 100%;
 }
 
-@media(max-width : 574px){
+@media(max-width : 407px){
     #full-name-div{
         display: none;
     }
@@ -237,6 +245,10 @@ h2{
         margin: 10px;
     }
 
+    .container{
+        width: 92%
+    }
+    
     li{
         display: inline; /* Display list items horizontally */
         margin-right: 10px;
