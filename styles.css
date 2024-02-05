@@ -11,7 +11,7 @@ body {
     radial-gradient(circle, #2f0943 2.5px, transparent 1px),
     radial-gradient(circle, #2f0943 2.5px, transparent 1px);
     background-color: #1a0c21; /* Background color for the gaps between dots */
-    background-size: 7px 7px;
+    background-size: 7.5px 7.5px;
     animation: moveBackAndForth 5s steps(10, start) infinite alternate;
 }
 
@@ -283,10 +283,14 @@ h2{
     .container{
         width: 92%
     }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
     
     li{
-        display: inline; /* Display list items horizontally */
-        margin-right: 10px;
+        display: inline-flex; /* Display list items horizontally */
     }
 }
 
