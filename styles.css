@@ -8,10 +8,10 @@ body {
     /* background: #280738; */
     color: rgb(218, 216, 216);
     background: 
-    radial-gradient(circle, #2f0943 2px, transparent 1px),
-    radial-gradient(circle, #2f0943 2px, transparent 1px);
+    radial-gradient(circle, #2f0943 2.5px, transparent 1px),
+    radial-gradient(circle, #2f0943 2.5px, transparent 1px);
     background-color: #1a0c21; /* Background color for the gaps between dots */
-    background-size: 6px 6px;
+    background-size: 7px 7px;
     animation: moveBackAndForth 5s steps(10, start) infinite alternate;
 }
 
@@ -89,7 +89,7 @@ h2{
 
 .navbar-nav .nav-link{
     color: rgb(100, 255, 218);
-    font-size: 19px;
+    font-size: 17px;
     transition: color 0.2s;
 }
 
@@ -126,7 +126,11 @@ h2{
 
 .social-link-bar{
     position: fixed;
-    margin-top: 40px;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    left: 0;
+    z-index: 1000;
+    margin-left: 18px;
 }
 
 .content{
@@ -134,6 +138,10 @@ h2{
     padding:15px;
     margin-top: 25px;
     margin-bottom: 25px;
+}
+
+.content p{
+    font-size: 15px;
 }
 
 .container{
@@ -153,7 +161,6 @@ h2{
 }
 
 #about{
-    font-size: 15px;
     margin-top: 50px;
     width:100%;
 }
@@ -261,9 +268,16 @@ h2{
     }
 
     .social-link-bar{
-        position:absolute;
+        position:relative;
         bottom:0;
         margin: 10px;
+        transform: none;
+        justify-content: center;
+        display: grid;
+    }
+
+    .content p{
+        font-size: 12px;
     }
 
     .container{
