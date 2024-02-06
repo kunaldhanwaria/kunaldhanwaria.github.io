@@ -8,8 +8,8 @@ body {
     /* background: #280738; */
     color: rgb(218, 216, 216);
     background: 
-    radial-gradient(circle, #471b4a 2.5px, transparent 1px),
-    radial-gradient(circle, #471b4a 2.5px, transparent 1px);
+    radial-gradient(circle, #3c173f 2.5px, transparent 1px),
+    radial-gradient(circle, #3c173f 2.5px, transparent 1px);
     background-color: #250934; /* Background color for the gaps between dots */
     background-size: 7.5px 7.5px;
     animation: moveBackAndForth 5s steps(10, start) infinite alternate;
@@ -41,6 +41,7 @@ h1{
     white-space: nowrap;
     overflow: hidden;
     border-right: 4px solid;
+    text-shadow: 0 0 5px #000000;
 }
 
 h2{
