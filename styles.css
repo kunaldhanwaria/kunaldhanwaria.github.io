@@ -8,9 +8,9 @@ body {
     /* background: #280738; */
     color: rgb(218, 216, 216);
     background: 
-    radial-gradient(circle, #2f0943 2.5px, transparent 1px),
-    radial-gradient(circle, #2f0943 2.5px, transparent 1px);
-    background-color: #1a0c21; /* Background color for the gaps between dots */
+    radial-gradient(circle, #471b4a 2.5px, transparent 1px),
+    radial-gradient(circle, #471b4a 2.5px, transparent 1px);
+    background-color: #250934; /* Background color for the gaps between dots */
     background-size: 7.5px 7.5px;
     animation: moveBackAndForth 5s steps(10, start) infinite alternate;
 }

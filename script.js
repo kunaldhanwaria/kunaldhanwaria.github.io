@@ -16,6 +16,13 @@ function scrollFunction() {
   }
 }
 
+function navToggleClick()
+{
+  var toggleButton = document.getElementById("btnNavToggle");
+
+  toggleButton.click();
+}
+
 document.getElementById("contact-matrix").addEventListener("click", showMatix);
 
 // Initialising the canvas
